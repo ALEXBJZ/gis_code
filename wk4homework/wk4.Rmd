@@ -1,0 +1,19 @@
+```{r}
+library(sf)
+library(tmap)
+library(tmaptools)
+library(tidyverse)
+```
+
+```{r}
+shape <- st_read("data/World_Countries__Generalized_.shp")
+```
+
+```{r}
+gender_data <- read_csv("data/HDR21-22_Composite_indices_complete_time_series.csv")
+```
+
+```{r}
+tmap_mode("plot")
+```
+
